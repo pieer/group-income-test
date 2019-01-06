@@ -22,10 +22,7 @@ export default {
   },
 
   computed: {
-    /**
-     * Get the current theme name
-     * Used to add a class for css
-     */
+    // Get the current theme name Used to add a class for css
     ...mapGetters(['colors'])
   },
 
