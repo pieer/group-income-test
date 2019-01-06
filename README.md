@@ -1,4 +1,4 @@
-# Apperance settings test
+# Appearance settings test
 
 ## General note
 ### Attention to details
