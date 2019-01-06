@@ -400,10 +400,6 @@ barColor = #c4c4c4
   background var(--main-color)
   border-radius 50%
   overflow hidden
-  transition transform 150ms ease-in
-
-  &:hover
-    transform scale(1.1)
 
   &::before
     content ''
