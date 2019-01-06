@@ -32,14 +32,14 @@ export default {
 
 @font-face
   font-family 'Source Sans Pro Local Fallback'
-  src url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype')
+  src url('../assets/fonts/SourceSansPro-Regular.ttf') format('truetype')
   font-style normal
   font-weight normal
 
 
 @font-face
   font-family 'Source Sans Pro Local Fallback'
-  src url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype')
+  src url('../assets/fonts/SourceSansPro-Bold.ttf') format('truetype')
   font-style normal
   font-weight normal
 
