@@ -17,31 +17,31 @@ export default {
 
 <style lang='stylus'>
 .button
-  -webkit-tap-highlight-color: transparent
-  border 3px solid var(--action-color)
-  color var(--action-color)
-  font-size 1.2rem
-  text-transform uppercase
-  letter-spacing 1px
-  font-weight 700
+  position relative
   height 70px
   width 270px
   max-width 90%
   outline none
+  -webkit-tap-highlight-color: transparent
+  font-size 1.2rem
+  text-transform uppercase
+  letter-spacing 1px
+  font-weight 700
+  color var(--action-color)
   background none
-  position relative
+  border 3px solid var(--action-color)
   cursor pointer
   z-index 0
 
   &:after
-    width 0%
-    height 100%
-    top 0
-    left 0
-    background var(--action-color)
     content ''
     position absolute
+    top 0
+    left 0
     z-index -1
+    height 100%
+    width 0%
+    background var(--action-color)
     transition all 0.3s
   
   &:hover

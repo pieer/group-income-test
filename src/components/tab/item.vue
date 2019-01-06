@@ -50,14 +50,14 @@ export default {
 .slide-next-leave-active,
 .slide-prev-enter-active,
 .slide-prev-leave-active
-  transition all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860)
   position absolute
+  transition all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860)
 
 .slide-prev-leave-to, .slide-next-enter
-  transform translate3d(0, -100%, 0)
   opacity 0
+  transform translate3d(0, -100%, 0)
 
 .slide-prev-enter, .slide-next-leave-to
-  transform translate3d(0, 100%, 0)
   opacity 0
+  transform translate3d(0, 100%, 0)
 </style>

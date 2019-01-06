@@ -314,30 +314,29 @@ barColor = #c4c4c4
 
 .slide-bar-component
   position relative
-  box-sizing border-box
-  user-select none
   padding-top 6px
-  min-height 70px
-  max-width 449px
+  box-sizing border-box
   width 450px
+  min-height 70px
   max-width calc(100% - 45px)
+  user-select none
 
 .slide-bar
   position relative
   display block
+  height 4px
   border-radius 15px
   background-color barColor
   cursor pointer
-  height 4px
   
   &::before
     content ''
     position absolute
+    right -4px
     height 100%
     width: 5px;
-    border-radius 100%
-    right -4px
     background-color barColor
+    border-radius 100%
 
   &::after
     content ''
@@ -350,32 +349,33 @@ barColor = #c4c4c4
 
 .slide-bar-process
   position absolute
-  border-radius 15px
-  background-color var(--main-color)
-  transition all 0s
   z-index 1
-  width 0
-  height 100%
   top 0
   left 0
+  width 0
+  height 100%
+  background-color var(--main-color)
+  border-radius 15px
+  transition all 0s
   will-change width
+
   &::before
     content ''
     position absolute
     height 100%
     width: 5px;
-    border-radius 100%
     left -4px
     background-color var(--main-color)
+    border-radius 100%
 
 .slide-bar-tooltip-container
   position absolute
-  transition all 0s
-  will-change transform
-  cursor pointer
   z-index 3
   left 0
   top -16px
+  transition all 0s
+  will-change transform
+  cursor pointer
 
 .slide-bar-tooltip-wrap
   position absolute
@@ -389,17 +389,17 @@ barColor = #c4c4c4
   transform translate(-50%, -100%)
 
 .slide-bar-tooltip
+  display block
   position relative
+  top 22px
+  height 16px
+  width 16px
   white-space nowrap
   text-align center
   color transparent
   background var(--main-color)
-  width 16px
   border-radius 50%
   overflow hidden
-  height 16px
-  display block
-  top 22px
   transition transform 150ms ease-in
 
   &:hover
@@ -423,32 +423,32 @@ barColor = #c4c4c4
 
 .slide-bar-separate
   position relative
+  top -15px
+  height 16px
   width 2px
   background-color barColor
   cursor pointer
-  top -15px
-  height 16px
-  
+
   &:nth-child(1)
     .slide-bar-separate-text
-      font-size 11px
       left 5px
+      font-size 11px
   
   &:nth-child(2)
     display none
 
   &:nth-child(3)
     .slide-bar-separate-text
-      font-size 13px
       left 2px
+      font-size 13px
 
   &:nth-child(4)
     display none
 
   &:nth-child(5)
     .slide-bar-separate-text
-      font-size 15px
       left 5px
+      font-size 15px
 
   &:nth-child(6)
     display none
@@ -458,11 +458,11 @@ barColor = #c4c4c4
       font-size 16px
 
 .slide-bar-separate-text
-  text-align center
   position absolute
+  top 33px
+  text-align center
   white-space nowrap
   transform translate(-50%, 0)
-  top 33px
 
 .dark .slide-bar-separate-text
   color #fff

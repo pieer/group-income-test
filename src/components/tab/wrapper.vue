@@ -88,11 +88,11 @@ closeMobileBgColor = #000
 closeMobileBarBgColor = #3C3C3C
 
 .tab-nav
-  width 35%
-  min-width 190px
-  align-items flex-end
   display flex
   flex-direction column
+  align-items flex-end
+  width 35%
+  min-width 190px
   background-color var(--nav-color)
 
 .tab-wrapper
@@ -102,9 +102,9 @@ closeMobileBarBgColor = #3C3C3C
     padding-top 15px
 
 .tab-nav-list
-  width 175px
   display flex
   flex-direction column
+  width 175px
   padding-right 7px
   font-size 1.4rem
 
@@ -113,9 +113,9 @@ closeMobileBarBgColor = #3C3C3C
     margin-bottom 0
 
 .tab-legend
-  color legendColor
   text-transform uppercase
   letter-spacing .1px
+  color legendColor
 
 .tab-legend,
 .tab-link
@@ -132,18 +132,18 @@ closeMobileBarBgColor = #3C3C3C
   color activeColor
 
 .tab-link:hover
-  background-color var(--main-hexa)
   padding-left 15px
+  background-color var(--main-hexa)
 
 .tab-nav-separator
-  border-top 1px solid separatorColor
-  border-bottom 0
   margin -1px 24px 15px 8px
   padding 0
+  border-top 1px solid separatorColor
+  border-bottom 0
 
 .tab-item
-  height 100%
   box-sizing: border-box
+  height 100%
 
 .tab-section
   width: 65%
@@ -153,28 +153,28 @@ closeMobileBarBgColor = #3C3C3C
     margin: 14px 0 24px 40px
 
   .tab-nav-toggle
-    -webkit-tap-highlight-color: transparent
-    background-color var(--bg-color)
-    border-radius 50%
     position absolute
     top 25px
     left 12px
+    z-index 30
     height 40px
     width 40px
+    background-color var(--bg-color)
+    border-radius 50%
     cursor pointer
-    z-index 30
+    -webkit-tap-highlight-color: transparent
 
     &:before,
     &:after
       content: ''
-      width 12px
-      height 2.5px
+      position absolute
       top 15px
       left 14px
-      transform-origin 50%
+      width 12px
+      height 2.5px
       background var(--action-color)
-      position absolute
       transition all .3s ease-out
+      transform-origin 50%
 
     &:after
       top 22px
@@ -195,12 +195,12 @@ closeMobileBarBgColor = #3C3C3C
     display block
   
   .tab-nav
-    width 100%
     position absolute
     left 0
     top 0
     bottom 0
     z-index 20
+    width 100%
     padding-top 62px
     padding-left 24px
     align-items flex-start

@@ -40,24 +40,24 @@ export default {
   margin 9px 0 24px 0px
 
 .subtitle
-  font-size 1.8rem
   margin-top 5px
   margin-bottom: 24px
+  font-size 1.8rem
 
 .preview
   padding-top 2px
 
   .title
-    font-size 1.4rem
     margin 0 0 6px 0
+    font-size 1.4rem
 
   .para
-    font-size 1.4rem
-    line-height 20px
-    letter-spacing .1px
     margin 0 0 50px 0
     width 450px
     max-width calc(100% - 45px)
+    font-size 1.4rem
+    line-height 20px
+    letter-spacing .1px
 
 @media screen and (max-width: 600px)
   .title

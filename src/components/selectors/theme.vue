@@ -62,13 +62,13 @@ radioBgColor = #5DC8F0
 searchBgColor = #fff
 
 .theme-list
-  list-style-type none
-  margin 0
-  padding 0
   display flex
   flex-wrap wrap
+  margin 0
+  padding 0
   width 410px
   max-width 100%
+  list-style-type none
 
 .search
   fill searchBgColor
@@ -78,12 +78,14 @@ label
 
 .theme
   position relative
+  margin 0 23px 18px 0
   padding 0
   border 0
-  margin 0 23px 18px 0
+
   &:hover
     svg
       transform scale(1.05)
+
     .main-color, .action
       for $i in (5)..(20)
         &:nth-child({$i})
@@ -113,30 +115,30 @@ svg
     font-size 1.5rem
     &::before,
     &::after
-      transition all 250ms cubic-bezier(0.4, 0.25, 0.3, 1)
       content ''
-      width 6px
-      height 6px
-      border-radius 50%
-      background-color white
-      border 1px solid borderRadioColor
-      font-size 0
       position absolute
       bottom 17px
       left 3px
+      width 6px
+      height 6px
+      font-size 0
+      border-radius 50%
+      background-color white
+      border 1px solid borderRadioColor
+      transition all 250ms cubic-bezier(0.4, 0.25, 0.3, 1)
 
     &::before
-      transform scale(1.5)
       border-color transparent
+      transform scale(1.5)
 
     &::after
-      transition all 250ms cubic-bezier(.4,.25,.3,1)
-      background-color transparent
-      border-width 1px
       width 12px
       height 12px
       bottom 14px
       left 0px
+      background-color transparent
+      border-width 1px
+      transition all 250ms cubic-bezier(.4,.25,.3,1)
 
   &:checked
     & + label
@@ -144,9 +146,9 @@ svg
         font-weight bold
 
       &:before
-        transform scale(1)
         background-color radioBgColor
         border-color transparent
+        transform scale(1)
 
       &:after
         border-color borderRadioActiveColor

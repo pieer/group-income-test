@@ -41,6 +41,6 @@ export default {
 
 <style lang='stylus' scoped>
 .settings-container
-  opacity 1
   height 100%
+  opacity 1
 </style>

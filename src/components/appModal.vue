@@ -63,40 +63,40 @@ closeBgHoverColor = #000
 closeBarBgHoverColor = #fff
 
 .modal-container
-  background var(--bg-color)
   position fixed
-  z-index 9998
   top 0
   left 0
   width 100%
   height 100%
-  transition all .3s ease
+  z-index 9998
+  background var(--bg-color)
   overflow auto
+  transition all .3s ease
 
 .modal-body
   height 100%
 
 .modal-close
-  -webkit-tap-highlight-color: transparent
-  background-color closeBgColor
-  border-radius 50%
   position absolute
   top 25px
   right 38px
   height 40px
   width 40px
+  background-color closeBgColor
+  -webkit-tap-highlight-color: transparent
+  border-radius 50%
   cursor pointer
 
   &:before,
   &:after
     content: ''
-    width 12px
-    height 2.5px
+    position absolute
     top 19px
     left 14px
-    transform-origin 50%
+    width 12px
+    height 2.5px
     background-color closeBarBgColor
-    position absolute
+    transform-origin 50%
     transform rotate(-45deg)
     transition all .3s ease-out
 
@@ -112,9 +112,9 @@ closeBarBgHoverColor = #fff
 
   label
     position absolute
-    font-size 13px
     top 44px
     left 10px
+    font-size 13px
     pointer-events none
 
 .slide-fade-enter-active
@@ -124,7 +124,7 @@ closeBarBgHoverColor = #fff
   transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0)
 
 .slide-fade-enter, .slide-fade-leave-to
-  transform: translateX(-100%)
   opacity: 0
+  transform: translateX(-100%)
 
 </style>
