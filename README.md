@@ -54,8 +54,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Test dist page
-```
-cd dist; python -m SimpleHTTPServer
-```
