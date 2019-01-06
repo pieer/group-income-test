@@ -57,6 +57,11 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
+closeBgColor = #f1f1f1
+closeBarBgColor = #3C3C3C
+closeBgHoverColor = #000
+closeBarBgHoverColor = #fff
+
 .modal-container
   background var(--bg-color)
   position fixed
@@ -73,7 +78,7 @@ export default {
 
 .modal-close
   -webkit-tap-highlight-color: transparent
-  background-color #f1f1f1
+  background-color closeBgColor
   border-radius 50%
   position absolute
   top 25px
@@ -90,7 +95,7 @@ export default {
     top 19px
     left 14px
     transform-origin 50%
-    background #3C3C3C
+    background-color closeBarBgColor
     position absolute
     transform rotate(-45deg)
     transition all .3s ease-out
@@ -99,10 +104,10 @@ export default {
     transform rotate(45deg)
 
   &:hover
-    background #000
+    background closeBgHoverColor
     &:before,
     &:after
-      background-color #fff
+      background-color closeBarBgHoverColor
       transform rotate(180deg)
 
   label

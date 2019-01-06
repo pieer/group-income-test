@@ -56,6 +56,11 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
+borderRadioColor = #D9D9D9
+borderRadioActiveColor = #000
+radioBgColor = #5DC8F0
+searchBgColor = #fff
+
 .theme-list
   list-style-type none
   margin 0
@@ -66,7 +71,7 @@ export default {
   max-width 100%
 
 .search
-  fill #fff
+  fill searchBgColor
 
 label
   text-transform capitalize
@@ -114,7 +119,7 @@ svg
       height 6px
       border-radius 50%
       background-color white
-      border 1px solid #D9D9D9
+      border 1px solid borderRadioColor
       font-size 0
       position absolute
       bottom 17px
@@ -140,10 +145,10 @@ svg
 
       &:before
         transform scale(1)
-        background-color #5DC8F0
+        background-color radioBgColor
         border-color transparent
 
       &:after
-        border-color #000
+        border-color borderRadioActiveColor
 
 </style>

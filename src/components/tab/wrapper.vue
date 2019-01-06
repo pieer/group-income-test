@@ -81,6 +81,12 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
+separatorColor = #B2C3CA
+legendColor = #7B7B7B
+activeColor = #fff
+closeMobileBgColor = #000
+closeMobileBarBgColor = #3C3C3C
+
 .tab-nav
   width 35%
   min-width 190px
@@ -107,7 +113,7 @@ export default {
     margin-bottom 0
 
 .tab-legend
-  color #7B7B7B
+  color legendColor
   text-transform uppercase
   letter-spacing .1px
 
@@ -123,14 +129,14 @@ export default {
   border-radius 2px
   background-color var(--main-color)
   font-weight bold
-  color #fff
+  color activeColor
 
 .tab-link:hover
   background-color var(--main-hexa)
   padding-left 15px
 
 .tab-nav-separator
-  border-top 1px solid #B2C3CA
+  border-top 1px solid separatorColor
   border-bottom 0
   margin -1px 24px 15px 8px
   padding 0
@@ -179,10 +185,10 @@ export default {
         transform rotate(180deg)
 
     &.open
-      background #000
+      background-color closeMobileBgColor
       &:before,
       &:after
-        background-color #3C3C3C
+        background-color closeMobileBarBgColor
         transform rotate(90deg)
 
   .tab-wrapper
