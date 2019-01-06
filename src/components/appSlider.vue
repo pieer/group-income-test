@@ -2,17 +2,25 @@
 .slide-bar-component.slide-bar-horizontal(ref='wrap' @click='wrapClick')
   .slide-bar(ref='elem')
     template
-      .slide-bar-always.slide-bar-tooltip-container(ref='tooltip', @mousedown='moveStart', @touchstart='moveStart')
+      .slide-bar-always.slide-bar-tooltip-container(
+          ref='tooltip'
+          @mousedown='moveStart'
+          @touchstart='moveStart'
+        )
         span.slide-bar-tooltip-top.slide-bar-tooltip-wrap
           span.slide-bar-tooltip
     .slide-bar-process(ref='process')
   .slide-bar-range(v-if='range')
-    .slide-bar-separate(v-for='(r, index) in range', :key='index')
+    .slide-bar-separate(
+        v-for='(r, index) in range'
+        :key='index'
+      )
       span.slide-bar-separate-text {{ r.label }}
 </template>
 <script>
 export default {
   name: 'AppSlider',
+
   data () {
     return {
       flag: false,
@@ -25,6 +33,7 @@ export default {
       realTime: false
     }
   },
+
   props: {
     data: {
       type: Array,
@@ -51,6 +60,7 @@ export default {
       default: 100
     }
   },
+
   computed: {
     slider () {
       return this.$refs.tooltip
@@ -108,6 +118,7 @@ export default {
       return [this.minimum, this.maximum]
     }
   },
+
   watch: {
     value (val) {
       if (this.flag) this.setValue(val)
@@ -124,6 +135,7 @@ export default {
       this.refresh()
     }
   },
+
   methods: {
     bindEvents () {
       document.addEventListener('touchmove', this.moving, {passive: false})
@@ -278,6 +290,7 @@ export default {
       }
     }
   },
+
   mounted () {
     this.isComponentExists = true
     this.$nextTick(() => {
@@ -288,6 +301,7 @@ export default {
       }
     })
   },
+
   beforeDestroy () {
     this.isComponentExists = false
     this.unbindEvents()

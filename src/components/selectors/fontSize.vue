@@ -39,7 +39,7 @@ export default {
     ]),
   },
 
-  created() {
+  created () {
     let size = 57.5
     for (let index = 0; index < this.fontVariations; index++) {
       // Add data to the slider
@@ -54,7 +54,7 @@ export default {
     }
   },
 
-  mounted(){
+  mounted (){
     setTimeout( () => {
       // Todo: find out why position is offset when loading component in popup dynamicaly
       this.$refs.slider.refresh()
