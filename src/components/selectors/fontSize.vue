@@ -56,7 +56,7 @@ export default {
 
   mounted(){
     setTimeout( () => {
-      // Todo: find out why position is offset when loading component in popup dunamically
+      // Todo: find out why position is offset when loading component in popup dynamicaly
       this.$refs.slider.refresh()
     }, 1000)
   }  

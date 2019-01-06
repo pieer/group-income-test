@@ -1,9 +1,0 @@
-- Review class name
-- refactor Apparence with a new component FontSize that include all the store actions
-- Add tab transition
-- Fix slider bad css
-- Review csss class name
-- Review vue guide line
-- Hover on menu
-- responsive
-- browser store location
