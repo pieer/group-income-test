@@ -23,5 +23,5 @@ export default {
 
 @media screen and (max-width: 600px)
   .title
-    margin: 15px 28px -4px 28px;
+    margin: 15px 28px 20px 28px;
 </style>
