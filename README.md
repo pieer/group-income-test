@@ -3,17 +3,19 @@
 ## General note
 ### Attention to details
 
-- A single colors.json file define the default theme selector aspect and also the css variable
-- That architecture allow the designer or user to create there own theme if they want
-- After refreshing the page the user still have his settings recorded in a local storage
-- The popup can be reused anywhere with any kind of content and can be open from any component
-- If you press esc on the keyboard the popup close.
-- The main page style is updated according to the user theme and font size selection
-- The themes are not images but actual SVG that are animated
-- The tab are fully working and very flexible to had any other settings using the settings.json file
+- A single colors.json file define the default theme selector aspect and also the css variables
+- Flexible architecture that allow designers or users to create there own theme
+- Local storage to save user choices
+- Reusable popup that can be trigger from any component
+- ESC on the keyboard to close the popup
+- Homepage styled according to the user theme and font size selection
+- The themes are not images but dynamic SVG that are animated and generated from json theme file
+- Flexible settings implementation configured in the settings.json file
+- Tab animations
+- Responsive page with animated mobile navigation
 
 ### Design decision
-The simple way to setup a theme for a website is probably to have a css class that wrap the website and define the color for all the elements:
+The simple way to setup a theme for a website is probably to have a css class that wrap the website and define the colors and fonts for all the elements in a css files:
 ```
 // Color definition
 .blue {
@@ -54,3 +56,6 @@ npm run serve
 ```
 npm run build
 ```
+
+### Test locally
+Simply open the dist/index.html
