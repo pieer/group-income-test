@@ -1,0 +1,62 @@
+{
+  "blue": {
+    "name": "blue",
+    "theme": "light",
+    "bg": "#fff",
+    "main": "#5DC8F0",
+    "mainHexa": "rgba(93,200,240,.7)",
+    "border": "#5DC8F0",
+    "nav": "#E0F4FC",
+    "placeholder": "#DBDBDB",
+    "action": "#FE6E61",
+    "font": "#414141"
+  },
+  "green": {
+    "name": "green",
+    "theme": "light",
+    "bg": "#fff",
+    "main": "#90BD0D",
+    "mainHexa": "rgba(144,189,13,.7)",
+    "border": "#90BD0D",
+    "nav": "#F4F8E7",
+    "placeholder": "#DBDBDB",
+    "action": "#FE6E61",
+    "font": "#414141"
+  },
+  "orange": {
+    "name": "orange",
+    "theme": "light",
+    "bg": "#fff",
+    "main": "#F89302",
+    "mainHexa": "rgba(248,147,2,.7)",
+    "border": "#F89302",
+    "nav": "#FEF4E6",
+    "placeholder": "#DBDBDB",
+    "action": "#FE6E61",
+    "font": "#414141"
+  },
+  "silver": {
+    "name": "silver",
+    "theme": "light",
+    "bg": "#fff",
+    "main": "#F89302",
+    "mainHexa": "rgba(248,147,2,.7)",
+    "border": "#999999",
+    "nav": "#F5F5F5",
+    "placeholder": "#DBDBDB",
+    "action": "#FE6E61",
+    "font": "#414141"
+  },
+  "dark": {
+    "name": "dark",
+    "theme": "dark",
+    "bg": "#4E4E4E",
+    "main": "#5DC8F0",
+    "mainHexa": "rgba(93,200,240,.7)",
+    "border": "black",
+    "nav": "#363636",
+    "placeholder": "#F4F3F4",
+    "action": "#FE6E61",
+    "font": "#fff"
+  }
+}
